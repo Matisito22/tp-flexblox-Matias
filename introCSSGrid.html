@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+      .box1{
+        background-color: yellow;
+      }
+      .box2{
+        background-color: blue;
+      }
+      .box3{
+        background-color: red;
+      }
+      .box4{
+        background-color: black;
+        color: white;
+      }
+      body{
+        display: grid;/* infline, block, infline-block, */
+        /* flexbox: ordena los elementos en una sola dimension (fila o columna)
+        grid: ordena los elementos de forma bidimensional (filas y columnas al mismo tiempo.)
+        ejemplo de matrices (1x1, 1x2, 2x1, 2x2, 3x1, 3x2)
+        (1), (1, 1)
+
+        2x1 y 2x2
+        (1), (1, 2)
+        (2), (2, 2)
+        */
+        grid-template-columns: 100px 500px;
+        grid-template-rows: 100px 150px;
+        column-gap: 5px;
+      }
+
+      .s2{
+        width: 100%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 20%;
+        grid-template-rows: 10% 90%;
+        gap: 5px;
+      }
+      .s3{
+        width: 100%;
+        height: 400px;
+        display: grid;
+        /*grid utiliza una unidad de medida llamada "fr" que significa fraccion restante*/
+        grid-template-columns: 20%;
+        grid-template-rows: 10% 90%;
+        gap: 5px;
+      }
+    </style>
+</head>
+<body>
+    <section class="box1">Box 1</section>
+    <section class="box2">Box 2</section>
+    <section class="box3">Box 3</section>
+    <section class="box4">Box 4</section>
+</body>
+</html>
